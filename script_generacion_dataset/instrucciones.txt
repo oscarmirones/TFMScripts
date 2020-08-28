@@ -1,0 +1,16 @@
+En caso que haya algún problema de librería sus instalaciones son sencillas y no suelen dar problemas:
+	*Instalación desde la shell de conda: conda install nombreLibreria
+	*Instalacion desde el notebook: !pip install nombreLibreria
+
+Para cada notebook asociado en cada cuenca, es necesario el fichero de trazas históricas 'Allstorms.ibtracs_wmo.v03r09.nc'.
+
+Para cyclone_files_generator hace falta haber reproducido los notebook de cada cuenca y sacar cada fichero .nc de cada cuenca. Además, hay que tener cuidado,
+en el script hay que cambiar ciertas cosas de la automatización:
+	*El directorio desde donde se leen los datos en crudo de precipitación y sst
+	*Los nombres de los ficheros de precipitación y sst, ya que la lectura de los mismos se basa en el nombre del fichero que recoge el año,mes,dia y hora.
+	Por ejemplo, '%Y%m%d-%H.nc4' es el formato de los ficheros de precipitación. Con lo cual, es recomendable realizar una automatización de forma que el
+	nombre del fichero indique a que año,mes, día y hora corresponde.
+
+Para AgruparDatosBruto se necesita haber ejecutado previamente el fichero All_basin. AgruparDatosBruto nos genera el fichero raw_data.nc4, que es necesario para el modelo
+y su validación.
+	

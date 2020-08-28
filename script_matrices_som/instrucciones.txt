@@ -1,0 +1,4 @@
+Para el funcionamiento de ambos scripts solo se necesita tener el archivo 'raw_data.nc4' en el mismo directorio que el notebook.
+En caso que haya algún problema de librería sus instalaciones son sencillas y no suelen dar problemas:
+	*Instalación desde la shell de conda: conda install nombreLibreria
+	*Instalacion desde el notebook: !pip install nombreLibreria

@@ -1,0 +1,17 @@
+Para el funcionamiento del script Matrices_con_datos_de_dataframe solo se necesita tener el archivo 'raw_data.nc4' en el mismo directorio que el notebook.
+En caso que haya algún problema de librería sus instalaciones son sencillas y no suelen dar problemas:
+	*Instalación desde la shell de conda: conda install nombreLibreria
+	*Instalacion desde el notebook: !pip install nombreLibreria
+
+El resto de scripts cada uno de ellos están asociados a una cuenca oceánica. Para su uso es necesario lo siguiente. Supongamos que tratamos con la cuenca
+Eastern Pacific (EP):
+	* Archivo general de la cuenca *basinEP.nc4*. Se genera en EasternPacific_Basin.ipynb
+	* El directorio EP_cyclones con todos sus archivos generados:
+		- dist_ciclonep
+		- ang_ciclonep
+		- precip_ciclonep
+		- ciclonep
+
+	Estos archivos son todos generados en el scripts cyclone_files_generator del directorio script_generacion_dataset
+	
+Este procedimiento se realiza con cada cuenca, los nombres de los ficheros en cada caso son similares salvo la "coletilla" que indica a que cuenca pertenecen.					
