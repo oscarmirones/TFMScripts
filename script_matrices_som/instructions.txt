@@ -1,0 +1,4 @@
+For the operation of both scripts you only need to have the file 'raw_data.nc4' in the same directory as the notebook.
+In case there is any problem with the library, its installation is simple and usually does not give problems:
+	*Installation from conda shell: conda install nameLibrary
+	*Installation from notebook: !pip install nameLibrary

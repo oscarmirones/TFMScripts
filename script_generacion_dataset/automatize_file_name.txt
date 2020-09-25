@@ -1,0 +1,33 @@
+In linux shell or Ubuntu shell simulator for Windows.
+It is recommended to install cdo (climate data operators) for handling.
+
+
+Name format of my downloaded files: 3B42.19980101.00.7.HDF.nc4
+
+Everything can be taken out directly from the beginning.
+If we call f to the file
+
+anyo:
+y=`echo $f | cut -c 6-9`
+month:
+m=`echo $f | cut -c 10-11`
+day:
+d=`echo $f | cut -c 12-13`
+hour:
+h=`echo $f | cut -c 15-16`
+
+cdo settaxis,$y-$m-$d,$h:00:00 $f $y$m$d-$h00.nc4
+
+Then the automation would be done with this for loop:
+(It is advisable to be in the directory where only these data are, a for is made by going through everything (*))
+ for i in *
+> do
+> y=`echo $i | cut -c 6-9`
+> m=`echo $i | cut -c 10-11`
+> d=`echo $i | cut -c 12-13`
+> h=`echo $i | cut -c 15-16`
+> cdo settaxis,$y-$m-$d,$h:00:00 $i $y$m$d-$h.nc4
+> rm $i
+> done
+
+Translated with www.DeepL.com/Translator (free version)

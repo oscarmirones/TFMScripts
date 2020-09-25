@@ -1,0 +1,18 @@
+For the operation of the Matrices_con_dataframe script you only need to have the file 'raw_data.nc4' in the same directory as the notebook.
+In case there is any problem with the library, its installation is simple and usually does not give problems:
+	*Installation from conda shell: conda install nameLibrary
+	*Installation from notebook: !pip install nameLibrary
+
+The rest of the scripts are each associated with an ocean basin. The following is necessary for their use. Suppose we deal with the basin
+Eastern Pacific (EP):
+	* General file of the basin *basinEP.nc4*. Generated in EasternPacific_Basin.ipynb
+	* The EP_cyclones directory with all its generated files
+		- dist_cyclonep
+		- ang_cyclonep
+		- precip_cyclonep
+		- cyclonep
+
+	These files are all generated in the cyclone_files_generator scripts in the script_generation_dataset directory
+	
+This procedure is done with each basin, the names of the files in each case are similar except for the "coletilla" that indicates which basin they belong to.					
+			

@@ -1,0 +1,17 @@
+In case there is any problem with the library, its installations are simple and usually do not give problems:
+	*Installation from conda shell: conda install nameLibrary
+	*Installation from notebook: !pip install nameLibrary
+
+For each associated notebook in each basin, the historical trace file 'Allstorms.ibtracs_wmo.v03r09.nc' is required.
+
+For cyclone_files_generator it is necessary to have reproduced the notebooks of each basin and to take out each .nc file of each basin. Besides, you have to be careful,
+in the script certain things about the automation have to be changed:
+	*The directory from which the raw precipitation and sst data are read
+	*The names of the precipitation and sst files, since the reading of the same is based on the name of the file that collects the year,month,day and hour.
+	For example, '%Y%m%d-%H.nc4' is the format of the precipitation files. Therefore, it is advisable to automate the process so that the
+	name of the file indicate which year, month, day and hour it corresponds to.
+
+To AgruparDatosBruto you need to have previously executed the All_basin file. AgruparDatosBruto generates the raw_data.nc4 file, which is necessary for the
+and its validation.
+	
+	
