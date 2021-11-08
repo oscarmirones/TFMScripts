@@ -30,4 +30,3 @@ Then the automation would be done with this for loop:
 > rm $i
 > done
 
-Translated with www.DeepL.com/Translator (free version)
