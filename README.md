@@ -17,7 +17,7 @@ In them, the notebook Matrices_SOM_20x20 is the main one and it collects the mod
 of the characteristics space and how the SOM centroids are distributed in it. Finally, in script_validation we find a single notebook where the validation is collected
 of the 95th and 99th percentiles of the model.
 
-## Spanish
+## Español
 Repositorio para almacenar los scripts del TFM y así poder reproducir los resultados obtenidos.
 
 El repositorio se divide en 4 apartados. A continuación se va a explicar el orden de ejecución que se debe seguir en cada uno de ellos para reprouducir correctamente los resultados.
